@@ -1,0 +1,345 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Krona One';
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+/* ---------- */
+
+.contenedor {
+    /* border: solid 2px red; */
+    width: 90%;
+    max-width: 1280px;
+    margin: auto;
+}
+/* ---------- */
+
+header {
+    background: url(imagenes/imagen.JPG);
+    height: 70vh;
+    /* border: solid 2px blue; */
+    background-size: cover;
+}
+
+header .menu {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px;
+}
+
+header .logo-y-menu {
+    display: flex;
+    align-items: center;
+}
+
+.logo-y-menu  .logo{
+    width: 15%;
+}
+
+/* .logo-y-menu {
+    border: solid 2px red;
+} */
+
+.logo-y-menu .logo {
+    width: 10%;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+}
+
+header .boton a,
+.botones a,
+#discografia a{
+    background: yellow;
+    color: black;
+    padding: 20px 40px;
+    line-height: 50px;
+}
+
+header .titular {
+    margin-top: 30vh;
+    color: white;
+}
+
+h1 {
+    font-size: 50px;
+    width: 70%;
+}
+
+.blanco {
+    background: white !important;
+}
+/* ---------- */
+
+#discografia {
+    background: black;
+    color: white;
+    /* border: solid 2px green; */
+    padding: 60px 0;
+}
+
+h4 {
+    margin: 0;
+    color: yellow;
+    border: 1px solid gray;
+    width: 120px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+#discografia .contenedor {
+    display: flex;
+    align-items: center;
+}
+
+#discografia span {
+    color: yellow;    
+    text-decoration: underline;
+}
+
+#discografia h2 {
+    font-size: 50px;
+    margin-bottom: 10px
+}
+
+#discografia p {
+    font-size: 14px;
+    line-height: 27px;
+    margin-bottom: 40px;
+}
+
+#discografia img {
+    width: 100%;
+}
+
+#discografia .texto {
+    width: 50%;
+}
+
+#discografia .foto {
+    width: 40%;
+}
+/* ---------- */
+#about {
+    padding: 100px 0;
+    /* border: solid 2px orangered; */
+}
+
+.contenedor-textos{
+    display: flex;
+}
+
+#about h4 {
+    color: black;
+    border: 1px solid black;
+    text-align: center;
+}
+
+#about p,
+#tour p,
+footer p {
+    font-family: 'Jost';
+}
+
+.negro {
+    background: #aaa !important;
+}
+
+/* ---------- */
+#tour {
+    /* border: solid 2px blue; */
+    background: yellow;
+    padding: 60px 0;
+}
+
+#tour .contenedor {
+    display: flex;
+    justify-content: space-around;
+}
+
+#tour .imagen {
+    /* border: solid 3px pink;    */
+    width: 40%;
+    position: relative;
+    top: -100px;
+}
+
+#tour img {
+    width: 100%;
+}
+
+#tour .texto {
+    width: 50%;
+    /* border: solid 3px green; */
+}
+
+#tour h4 {
+    color: #000;
+    text-align: center;
+}
+/* - */
+.fechas {
+    display: flex;
+    justify-content: space-around;
+    width: 85%;
+    margin: auto;
+    margin-bottom: 60px;
+    border-bottom: 1px solid #cccccc57;
+    padding-bottom: 30px;
+}
+
+.fechas .numero {
+    font-size: 34px;
+    
+}
+
+.fechas h5,
+.fechas p {
+    margin: 0;
+
+}
+
+.fechas h5 {
+    font-size: 20px;
+}
+
+.fechas a {
+    background: #fff;
+    color: #000;
+    padding: 15px 30px;
+}
+/* ---------- */
+footer {
+    /* border: solid 3px green; */
+    text-align: center;
+    padding: 60px 0;
+}
+
+footer svg {
+    background: #000;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    width: 15px !important;
+    height: 15px !important;
+    margin: 0 10px;
+}
+
+/* ------------------- */
+/* ------------------- */
+
+@media screen and (max-width: 800px) {
+    header .menu {
+        flex-direction: column;
+    }
+    header .logo-y-menu {
+        justify-content: space-between;
+    }
+
+    nav ul {
+        flex-direction: column;    
+    }
+
+    nav {
+        background: yellow;
+        width: 100%;
+        position: absolute;
+        top: 65px;
+        left: 0;
+    }
+
+    nav ul li a {
+        color: #000;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    .boton {
+        margin-top: 160px;
+        display: none;
+    }
+
+    /* --- */
+    h1 {
+        font-size: 32px;
+    }
+
+    header .titular {
+        margin-top: 19vh;
+    }
+
+    h2 {
+        font-size: 22px !important;
+    }
+
+    #discografia .contenedor {
+        flex-direction: column;
+    }
+
+    #discografia .texto {
+        width: 100%;
+    }
+
+    #discografia .foto {
+        width: 82%;
+        margin-top: 20px;
+    }
+
+    .contenedor-textos {
+        flex-direction: column;
+    }
+
+    header .boton a, 
+    .botones a,
+    #discografia a {
+        background: yellow;
+        color: #000;
+        padding: 14px 19px;
+        font-size: 13px;
+    }
+
+    #tour .contenedor {
+        flex-direction: column;
+    }
+
+    #tour .imagen {
+        width: 65%;
+        position: relative;
+        top:-27px;
+    }
+
+    #tour .texto {
+        width: 100%;
+    }
+
+    .fechas {
+        flex-direction: column;
+    }
+
+    .fechas div {
+        margin-bottom: 10px;
+    }
+
+
+    /* .logo-y-menu .menu-icon {
+        display: none;
+    } */
+}
